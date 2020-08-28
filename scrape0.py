@@ -10,6 +10,7 @@ import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 from dotenv import load_dotenv
 import os
+import traceback
 
 TIMETABLE_URL = 'https://studentservices.uwo.ca/secure/timetables/mastertt/ttindex.cfm'
 SUBJECT_CODES = {'ACTURSCI': 'Actuarial Science', 'AMERICAN': 'American Studies',
@@ -274,7 +275,7 @@ def emailAdminError(errorMsg):
     message["To"] = receiverEmail
 
     # write the plain text
-    text = "There was an error with your program. Please check the components. Error message: {error}"
+    text = "There was an error with program #0. Please check the components.\n\n{error}"
 
     # convert the text to MIMEText objects and add them to the MIMEMultipart message
     part1 = MIMEText(text, "plain")
@@ -366,9 +367,10 @@ def main():
 
             # loop through data frame, email users, delete users from database that have been messaged
             loopThroughDataFrame(userDataFrame, cur)
-        except Exception as e:
+        except:
             # emails the admin if there is any error
-            emailAdminError(str(e))
+            error = traceback.format_exc()
+            emailAdminError(str(error))
             exit()
 
         # time to restart script
