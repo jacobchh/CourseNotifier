@@ -175,7 +175,7 @@ def emailUser(name, email, courseNumber, subject):
                     Your information will be deleted from our database soon. If you could not get into your class, please sign up again on our <a href="https://www.coursenotifier.com/">website</a> to receive another notification.<br>
                     <div><br></div>
                     <div>
-                        - MyUWOCourseIsFull
+                        - CourseNotifier
                         <div></div>
                         <div><br></div>
                     </div>
@@ -238,7 +238,7 @@ def emailUserCourseError(name, email, courseNumber, subject):
                     Please refer to this <a href="https://www.coursenotifier.com/class-number.png">picture</a> on identifying your class number, and sign up again on our <a href="https://www.coursenotifier.com/">website</a> to receive another notification.<br>
                     <div><br></div>
                     <div>
-                        - MyUWOCourseIsFull
+                        - CourseNotifier
                         <div></div>
                         <div><br></div>
                     </div>
