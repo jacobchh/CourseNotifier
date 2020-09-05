@@ -50,7 +50,7 @@ SUBJECT_CODES = {'ACTURSCI': 'Actuarial Science', 'AMERICAN': 'American Studies'
                  'MCS': 'Museum and Curatorial Studies', 'MUSIC': 'Music', 'NEURO': 'Neuroscience',
                  'NURSING': 'Nursing', 'ONEHEALT': 'One Health', 'PASTTHEO': 'Pastoral Theology',
                  'PATHOL': 'Pathology', 'PHARM': 'Pharmacology', 'PHILST': 'Philosophical Studies',
-                 'P HILOSOP': 'Philosophy', 'PHYSICS': 'Physics', 'PHYSIOL': 'Physiology',
+                 'PHILOSOP': 'Philosophy', 'PHYSICS': 'Physics', 'PHYSIOL': 'Physiology',
                  'PHYSPHRM': 'Physiology and Pharmacology', 'POLISCI': 'Political Science',
                  'PPE': 'Politics, Philosophy, Economic', 'PSYCHOL': 'Psychology',
                  'REHABSCI': 'Rehabilitation Sciences', 'RELEDUC': 'Religious Education',
