@@ -223,9 +223,9 @@ def emailUserCourseError(name, email, courseNumber, subject):
 
     The class number you entered for {subject} class #{xxxx} is invalid!
 
-    Please refer to the "What's This?" link on our website, and sign up again to receive another notification.
+    Note that 1000 is not the class number for Calculus 1000! Instead, there is a unique class number associated with each section. Please refer to the "What's This?" link on our website, and sign up again to receive another notification.
 
-    - MyUWOCourseIsFull
+    - CourseNotifier
     """
 
     # write the HTML part
@@ -238,7 +238,7 @@ def emailUserCourseError(name, email, courseNumber, subject):
                 <div>The class number you entered for {subject} class #{xxxx} is invalid!<br></div>
                 <div><br></div>
                 <div>
-                    Please refer to this <a href="https://www.coursenotifier.com/class-number.png">picture</a> on identifying your class number, and sign up again on our <a href="https://www.coursenotifier.com/">website</a> to receive another notification.<br>
+                    Note that 1000 is not the class number for Calculus 1000! Instead, there is a unique class number associated with each section. Please refer to this <a href="https://www.coursenotifier.com/class-number.png">picture</a> on identifying your class number, and sign up again on our <a href="https://www.coursenotifier.com/">website</a> to receive another notification.<br>
                     <div><br></div>
                     <div>
                         - CourseNotifier
